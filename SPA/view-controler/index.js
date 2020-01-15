@@ -14,7 +14,12 @@ export const changeView = (route) => {
         container.innerHTML = '';
         container.appendChild(components.catalogo(data));
       });
-      // return container.appendChild(components.catalogo());
+    }
+    case '#/perfil': {
+      return showAllComments((data) => {
+        container.innerHTML = '';
+        container.appendChild(components.perfil(data));
+      });
     }
     case '#/Registro': { return container.appendChild(components.registrarse()); }
     default:

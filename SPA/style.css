@@ -38,6 +38,7 @@ border: 0;
     text-align: center;
     font-size: 16px;
     font-family: monospace;
+    display: block;
 }
 
 .form-loging {
@@ -274,6 +275,13 @@ select:disabled {
     margin-right: auto;
 }
 
+.section-info-profile {
+    width: 328px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
 .figure-photo {
     margin-left: 0;
     margin-right: 30px;
@@ -299,6 +307,14 @@ select:disabled {
 }
 
 #enlaces p {
+    height: 30px;
+    border: 1px solid white;
+    margin: 0;
+    padding: 15px;
+    padding-top: 22px;
+}
+
+#enlaces a {
     height: 30px;
     border: 1px solid white;
     margin: 0;

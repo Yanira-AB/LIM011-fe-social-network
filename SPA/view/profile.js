@@ -13,7 +13,7 @@ export default (posts) => {
     <header class="header-movil">
     <menu id="menu-movil" class="menu-movil"><i class="fas fa-bars fa-2x bars"></i></menu>
     <nav id="enlaces" class="animationOne">
-      <a href="#/perfil" class="profile-movil text">Mi perfil</a>
+      <a href="#/catalogo" class="profile-movil text">Muro</a>
       <p class="text">Salir</p>
     </nav>
     <h1 class="logo-movil">PET LOVERS</h1>
@@ -21,14 +21,14 @@ export default (posts) => {
   <div class="list-menu-destok">
   <menu id="menu-movil-destok"><span id="nameUserHeader">Nombre de Mascota</span><i id="icon-down" class="fas fa-caret-down"></i></menu>
   <nav id="enlaces-destok" class="animationOne">
-    <a href="#/perfil" class="profile-destok text">Mi perfil</a>
+    <a href="#/catalogo" class="profile-destok text">Muro</a>
     <p class="text">Salir</p>
   </nav>
   <h1 class="logo-destok">PET LOVERS</h1>
   <menu id="out-menu-destok">Cerrar sesión <i class="fas fa-sign-out-alt"></i></menu>
   </div>
   <main id="main-muro">
-    <section class="flex section-info-muro">
+    <section class="flex section-info-profile">
       <figure class="figure-photo">
         <img id="photoProfile" class="photo" src="img/fondo-pet.jpg" alt="foto de perfil">
       </figure>
