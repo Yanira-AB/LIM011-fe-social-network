@@ -107,7 +107,8 @@ export const createComment = (container, doc) => {
     save.classList.add('hide');
   });
   container.appendChild(divContainer);
-  const objElements = {
+
+  /* const objElements = {
     btnEdit: edit,
     btnClose: btnDelete,
   };
@@ -124,4 +125,7 @@ export const createComment = (container, doc) => {
     array.splice(item, 1);
   }
   console.log(array);
-}; */
+}; 
+
+};*/
+

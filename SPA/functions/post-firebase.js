@@ -92,6 +92,7 @@ export const iterateComments = (data, createComment, container) => {
       createComment(container, doc);
     }
   });
+
 };
 
 export const likeMoreUpdate = (doc) => {
@@ -141,3 +142,6 @@ export const printLike = (doc) => {
   }
   return boolean;
 };
+
+};
+
