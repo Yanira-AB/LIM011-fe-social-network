@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-restricted-globals */
@@ -108,7 +109,7 @@ export const createComment = (container, doc) => {
   });
   container.appendChild(divContainer);
 
-  /* const objElements = {
+  const objElements = {
     btnEdit: edit,
     btnClose: btnDelete,
   };
@@ -125,7 +126,6 @@ export const createComment = (container, doc) => {
     array.splice(item, 1);
   }
   console.log(array);
-}; 
+};
 
-};*/
-
+}; */
