@@ -19,8 +19,8 @@ export default () => {
       <button class="btn-init" type="text" id="button"><a id= "changeView" href="">Iniciar sesión</a></button>
       <p class="text">O bien ingresa con...</p>
       <section class="section-redes">
-        <button class="btn-redes"><i class="fab fa-facebook"></i></button>
-        <button class="btn-redes"><i class="fab fa-google"></i></button>
+        <button class="btn-redes"><img src="img/icono-facebook.png" class="btn-icon-white"></button>
+        <button class="btn-redes"><img src="img/icon-google.png" class="btn-icon-white"></button>
       </section>
       <p class="text">¿No tienes una cuenta? <a class="text-link" href="#/Registro">Regístrate</a></p>
     </form>

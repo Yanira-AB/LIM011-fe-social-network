@@ -171,6 +171,12 @@ border: 0;
     border: none;
 }
 
+.btn-icon-white {
+    height: 37px;
+    border-radius: 50%;
+    border: none;
+}
+
 .btn-share {
     width: 43%;
     box-sizing: border-box;
