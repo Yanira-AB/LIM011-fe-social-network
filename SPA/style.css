@@ -39,6 +39,9 @@ border: 0;
     font-size: 16px;
     font-family: monospace;
     display: block;
+    height: 30px;
+    padding: 15px;
+    padding-top: 22px;
 }
 
 .form-loging {
@@ -117,7 +120,7 @@ border: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    background: rgb(211, 211, 211);
+    background: rgb(255, 161, 118);
     box-shadow: rgb(143, 143, 143) 5px 1px 8px;
     height: 55px;
 }
@@ -161,6 +164,13 @@ border: 0;
     border: none;
 }
 
+.btn-icon {
+    height: 37px;
+    border-radius: 50%;
+    background: rgb(65, 65, 65);
+    border: none;
+}
+
 .btn-share {
     width: 43%;
     box-sizing: border-box;
@@ -193,7 +203,7 @@ border: 0;
 .title-note {
     display: flex;
     justify-content: space-between;
-    background: grey;
+    background: rgb(255, 161, 118);
     padding: 15px;
 }
 
@@ -496,7 +506,7 @@ select:disabled {
         width: 100%;
         display: flex;
         align-items: center;
-        background: rgb(211, 211, 211);
+        background: rgb(255, 161, 118);
         box-shadow: rgb(143, 143, 143) 5px 1px 8px;
         height: 55px;
     }

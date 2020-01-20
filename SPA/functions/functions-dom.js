@@ -52,8 +52,8 @@ export const createComment = (container, doc) => {
             </div>
               <textarea class="text-coment">${doc.data.contenido}</textarea>
             <div class="section-btns-note">
-              <button class='like btns-note ${printLike(doc) ? 'btnLikeOn' : 'btnLikeOff'}'>${doc.data.likesTotal}</button>
-              <button class="photo btns-note"><i class="fas fa-share icons-white"></i></button>
+              <button class='like btns-note ${printLike(doc) ? 'btnLikeOn' : 'btnLikeOff'}'><img src="img/icon-corazon.png" class="btn-icon"></button>
+              <button class="photo btns-note">${doc.data.likesTotal}</button>
                 <select class="comboPrivacy btns-noteEdit">
                 <option value="publica">Pública</option>
                 <option value="privada">Privada</option>

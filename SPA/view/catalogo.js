@@ -62,7 +62,7 @@ export default (posts) => {
       <form class="form">
         <textarea id = "texto" placeholder="¿Qué quieres compartir?" name="" id="" cols="37" rows="4"></textarea>
         <div class="btn-coment">
-            <button class="btn-img"><i class="far fa-image icons-white"></i></button>
+            <button class="btn-img"><img class="btn-icon" src="img/icono-fotos.png"></button>
             <select class="comboPrivacy btns-noteEdit">
               <option value="publica">Privacidad</option>
               <option value="publica">Pública</option>

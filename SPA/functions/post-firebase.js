@@ -96,6 +96,17 @@ export const iterateComments = (data, createComment, container) => {
   });
 };
 
+export const iterateCommentsProfile = (data, createComment, container) => {
+  data.forEach((doc) => {
+    if (userActual().uid === doc.data.id && doc.data.privacidad === 'publica') {
+      createComment(container, doc);
+    }
+    if (userActual().uid === doc.data.id && doc.data.privacidad === 'privada') {
+      createComment(container, doc);
+    }
+  });
+};
+
 export const likeMoreUpdate = (doc) => {
   let addlike = true;
   const arrayUsers = doc.data.userLikes;
