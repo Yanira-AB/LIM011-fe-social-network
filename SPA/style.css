@@ -447,15 +447,13 @@ select:disabled {
     }
     .section-info-muro {
         width: 50%;
+        display: none;
     }
     .form, .coment {
         margin-left: 3%;
         width: 65%;
     }
 
-    .section-info-muro {
-        display: none;
-    }
     .section-destok {
         display: flex;
         flex-direction: column;

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prefer-destructuring */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
 import { promAuthFace, promAuthGoogle } from '../functions/controller-firebase.js';

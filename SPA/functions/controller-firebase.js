@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable import/named */
 /* eslint-disable import/extensions */
 /* eslint-disable no-undef */
@@ -43,7 +44,7 @@ export const promOutUser = () => {
 };
 
 export const promAddCommentFirestore = (texto, privacy) => {
-  return addCommentFirestore(texto, privacy).then((docRef) => docRef.id)
+  return addCommentFirestore(texto.value, privacy.value).then((docRef) => docRef.id)
     .catch((error) => {
       console.error('Error: ', error);
     });

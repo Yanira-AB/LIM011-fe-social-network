@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
 /* eslint-disable no-undef */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
