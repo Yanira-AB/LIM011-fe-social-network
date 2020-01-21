@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
-import { firebaseSignIn } from '../functions/auth-firebase.js';
+import { logInUser } from '../functions/auth-firebase.js';
 
 export default () => {
   const contentViewSignIn = `
@@ -30,7 +30,7 @@ export default () => {
     e.preventDefault();
     const emailSignIn = divElement.querySelector('#email').value;
     const passwordSignIn = divElement.querySelector('#password').value;
-    firebaseSignIn(emailSignIn, passwordSignIn).then(() => {
+    logInUser(emailSignIn, passwordSignIn).then(() => {
       window.location.hash('');
     });
   });

@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 /* eslint-disable no-console */
 /* eslint-disable no-alert */
 /* eslint-disable no-undef */
@@ -19,19 +20,13 @@ export const initFire = () => {
 };
 
 // Crear usuario con email y password
-export const firebaseSignIn = (email, password) => {
-  firebase.auth().createUserWithEmailAndPassword(email, password).catch((error) => {
-    // Handle Errors here.
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage, errorCode);
-    // ...
-  });
+export const createUserAuth = (email, password) => {
+  return firebase.auth().createUserWithEmailAndPassword(email, password);
 };
 
 // Loguearse con email y password
-export const firebaseLogIn = (email, password) => {
-  firebase.auth().signInWithEmailAndPassword(email, password);
+export const logInUser = (email, password) => {
+  return firebase.auth().signInWithEmailAndPassword(email, password);
 };
 
 // Auth con Facebook
