@@ -5,7 +5,8 @@
 import { promAuthFace, promAuthGoogle } from '../functions/controller-firebase.js';
 
 export default () => {
-  const viewHome = `<header class="header-inicio">
+  const viewHome = `
+  <header class="header-inicio">
     <figure class="img-header">
       <img src="img/fondo-pet.jpg" alt="fondo de cabecera">
     </figure>

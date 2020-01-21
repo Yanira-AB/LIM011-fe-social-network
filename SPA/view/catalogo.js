@@ -20,13 +20,16 @@ export default (posts) => {
     <h1 class="logo-movil">PET LOVERS</h1>
   </header>
   <div class="list-menu-destok">
-  <menu id="menu-movil-destok"><span id="nameUserHeader">Nombre de Mascota</span><i id="icon-down" class="fas fa-caret-down"></i></menu>
-  <nav id="enlaces-destok" class="animationOne">
-    <a href="#/perfil" class="profile-destok text">Mi perfil</a>
-    <p class="text">Salir</p>
-  </nav>
-  <h1 class="logo-destok">PET LOVERS</h1>
-  <menu id="out-menu-destok">Cerrar sesión <i class="fas fa-sign-out-alt"></i></menu>
+    <menu id="menu-movil-destok">
+      <span id="nameUserHeader">Nombre de Mascota</span>
+      <i id="icon-down" class="fas fa-caret-down"></i>
+    </menu>
+    <nav id="enlaces-destok" class="animationOne">
+      <a href="#/perfil" class="profile-destok text">Mi perfil</a>
+      <p class="text">Salir</p>
+    </nav>
+    <h1 class="logo-destok">PET LOVERS</h1>
+    <menu id="out-menu-destok">Cerrar sesión <i class="fas fa-sign-out-alt"></i></menu>
   </div>
   <main id="main-muro">
     <section class="flex section-info-muro">

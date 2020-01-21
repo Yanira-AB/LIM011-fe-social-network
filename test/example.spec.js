@@ -39,5 +39,6 @@ describe('addCommentFirestore', () => {
   it('debería ser una función que agregue un documento a la colección de "publicaciones', (done) => addCommentFirestore('hola', 'publica').then((data) => {
     console.log(data);
     expect(data).toBe('el doc. fue agregado');
+    done();
   }));
 });
