@@ -3,6 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
 import { promAuthFace, promAuthGoogle } from '../functions/controller-firebase.js';
+import { loginUserEvent } from '../functions/login-user-event.js';
 
 export default () => {
   const viewHome = `
@@ -18,10 +19,11 @@ export default () => {
       <input type="email" placeholder="e-mail" id="e-mail">
       <input type="password" placeholder="contraseña" id="password">
       <button class="btn-init" type="text" id="button"><a id= "changeView" href="">Iniciar sesión</a></button>
+      <p class="p-alert" id = "errorMensaje"><p>
       <p class="text">O bien ingresa con...</p>
       <section class="section-redes">
-        <button class="btn-redes"><img src="img/icono-facebook.png" class="btn-icon-white"></button>
-        <button class="btn-redes"><img src="img/icon-google.png" class="btn-icon-white"></button>
+        <button class="btn-redes"><img class="btn-icon" src="https://img.icons8.com/bubbles/50/000000/facebook.png"></button>
+        <button class="btn-redes"><img class="btn-icon" src="https://img.icons8.com/bubbles/50/000000/gmail.png"></button>
       </section>
       <p class="text">¿No tienes una cuenta? <a class="text-link" href="#/Registro">Regístrate</a></p>
     </form>
@@ -33,6 +35,9 @@ export default () => {
   divElement.innerHTML = viewHome;
 
   // funciones de autentificación
+  const btnLogueoManual = divElement.querySelector('.btn-init');
+  btnLogueoManual.addEventListener('click', loginUserEvent);
+
   const btnFace = divElement.querySelector('.section-redes').firstElementChild;
   btnFace.addEventListener('click', (e) => {
     e.preventDefault();

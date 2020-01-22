@@ -7,6 +7,7 @@ import {
   closeModal, closeGrey, showModal, createComment,
 } from '../functions/functions-dom.js';
 import { iterateComments } from '../functions/post-firebase.js';
+// import { getDataUser } from '../functions/login-user-event.js';
 
 export default (posts) => {
   console.log(posts);
@@ -22,7 +23,7 @@ export default (posts) => {
   <div class="list-menu-destok">
     <menu id="menu-movil-destok">
       <span id="nameUserHeader">Nombre de Mascota</span>
-      <i id="icon-down" class="fas fa-caret-down"></i>
+      <img id="icon-down" src="https://img.icons8.com/carbon-copy/100/000000/expand-arrow.png">
     </menu>
     <nav id="enlaces-destok" class="animationOne">
       <a href="#/perfil" class="profile-destok text">Mi perfil</a>
@@ -129,12 +130,18 @@ export default (posts) => {
   const contenido = divElement.querySelector('#contenido');
   const modal = divElement.querySelector('#modal');
   const close = divElement.querySelector('#close');
-
   photoProfile.src = userActual().photoUrl;
   nameUser.innerHTML = userActual().name;
   photoProfileDestok.src = userActual().photoUrl;
   nameUserDestok.innerHTML = userActual().name;
   nameUserHeader.innerHTML = userActual().name;
+  /*   let fotoPerfil;
+  let nombreUsuario;
+  getDataUser(uidUser, (userData) => {
+    debugger
+    nombreUsuario = userData;
+  });
+  console.log(nombreUsuario); */
 
   // Modal para foto de perfil
 

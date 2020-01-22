@@ -4,13 +4,17 @@ margin: 0;
 border: 0;
 }
 
+.p-alert {
+    font-size: 120%;
+    color: crimson;
+}
+
 .eliminar {
-    border: 2px solid red;
-    width: 10px;
+    width: 30px;
 }
 
 .btnLikeOn {
-    border: #ff897c 3px solid;
+    border: #ff897c 4px solid;
 }
 
 .btnLikeOff {
@@ -85,6 +89,7 @@ border: 0;
     margin-right: 13px;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding: 0px;
 }
 
 .text-link {
@@ -160,15 +165,16 @@ border: 0;
     border-radius: 50%;
     margin-right: 13px;
     margin-top: 5px;
-    background: rgb(65, 65, 65);
     border: none;
+    padding: 0;
 }
 
 .btn-icon {
-    height: 37px;
+    height: 36px;
+    width: 38px;
     border-radius: 50%;
     background: rgb(65, 65, 65);
-    border: none;
+    box-sizing: border-box;
 }
 
 .btn-icon-white {
@@ -183,6 +189,7 @@ border: 0;
     height: 38px;
     border-radius: 20px;
     padding-left: 12px;
+    background: rgb(255, 161, 118);
 }
 
 .btn-coment {
@@ -250,12 +257,14 @@ select:disabled {
     margin-right: 13px;
     margin-top: 5px;
     background: grey;
+    padding: 0px;
+    border: none;
 }
 
 .btns-noteEdit {
     height: 37px;
     margin-right: 13px;
-    background: grey;
+    background: rgb(255, 184, 143);
     border: none;
     border-radius: 5%;
     padding-right: 8px;
@@ -521,7 +530,6 @@ select:disabled {
     }
     #icon-down {
         display: inline-block;
-        border: 1px solid grey;
         width: 20px;
         height: 20px;
         margin-left: 5px;

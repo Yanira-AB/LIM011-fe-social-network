@@ -48,11 +48,12 @@ export const createComment = (container, doc) => {
   divContainer.classList.add('coment');
   const comment = `
             <div class="title-note">
-            <p>Publicado por ${doc.data.nombre}  - ${doc.data.hora} del ${doc.data.fecha} </p><i class="eliminar fas fa-times"></i>
+            <p>Publicado por ${doc.data.nombre}  - ${doc.data.hora} del ${doc.data.fecha} </p>
+            <img class="eliminar" src="https://img.icons8.com/plasticine/100/000000/close-window.png">
             </div>
               <textarea class="text-coment">${doc.data.contenido}</textarea>
             <div class="section-btns-note">
-              <button class='like btns-note ${printLike(doc) ? 'btnLikeOn' : 'btnLikeOff'}'><img src="img/icon-corazon.png" class="btn-icon"></button>
+              <button class='like btns-note'><img src="img/icon-corazon.png" class="btn-icon ${printLike(doc) ? 'btnLikeOn' : 'btnLikeOff'}"></button>
               <button class="photo btns-note">${doc.data.likesTotal}</button>
                 <select class="comboPrivacy btns-noteEdit">
                 <option value="publica">Pública</option>

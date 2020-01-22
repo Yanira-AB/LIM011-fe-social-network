@@ -1,38 +1,29 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-cycle */
-import { logInUser } from '../functions/auth-firebase.js';
+import { createUser } from '../functions/register-controller.js';
 
 export default () => {
-  const contentViewSignIn = `
-  <header class="header-inicio">
-    <figure class="img-header">
-      <img src="img/fondo-pet.jpg" alt="fondo de cabecera">
-    </figure>
-    <a href=""><h1 class="logo-home" >PET LOVERS</h1></a>
-  </header>
-  <form>
-    <h1>Regístrate</h1>
-    <input type="text" id='nameSignIn' placeholder="Nombre" required>
-    <input type="text" id='lastNameSignIn' placeholder="Apellidos" required>
-    <input type="email" id ='email' placeholder="Correo electrónico" required>
-    <input type="password" id ='password' placeholder="Contraseña nueva" required>
-    <!-- <p>Fecha de nacimiento</p>
-    <input type='date' required> -->
-    <button href="" id='btnSignIn'>Crear cuenta</button>
-  </form>`;
+  const viewRegister = `
+  <header><a href = ""><h1>Pet Lovers</h1></a></header>
+  <main>
+    <h2>Registro</h2>
+    <form class="form">
+      <input class="input-form" type="text" placeholder="Nombres">
+      <input class="input-form" type="text" id="last-name" placeholder="Apellidos">
+      <input class="input-form" type="email" placeholder="Correo Electrónico">
+      <input class="input-form" type="password" placeholder="Contraseña">
+      <button class="button-form">Crear cuenta</button>
+      <p class="p-alert"></p>
+    </form>
+  </main>
+  `;
+
   const divElement = document.createElement('div');
-  divElement.innerHTML = contentViewSignIn;
+  divElement.innerHTML = viewRegister;
 
+  // DOM
+  const buttonRegister = divElement.querySelector('.button-form');
+  buttonRegister.addEventListener('click', createUser);
 
-  // Selección de elementos del DOM
-  const btnSignIn = divElement.querySelector('#btnSignIn');
-  btnSignIn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const emailSignIn = divElement.querySelector('#email').value;
-    const passwordSignIn = divElement.querySelector('#password').value;
-    logInUser(emailSignIn, passwordSignIn).then(() => {
-      window.location.hash('');
-    });
-  });
   return divElement;
 };

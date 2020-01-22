@@ -5,7 +5,9 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable max-len */
 /* eslint-disable import/no-cycle */
-import { authFace, authGoogle, outUser } from './auth-firebase.js';
+import {
+  authFace, authGoogle, outUser,
+} from './auth-firebase.js';
 import { addCommentFirestore } from './post-firebase.js';
 
 export const promAuthFace = () => authFace().then((result) => firebase.firestore().collection('users').add({

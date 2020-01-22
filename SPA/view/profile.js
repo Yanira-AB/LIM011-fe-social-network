@@ -20,7 +20,9 @@ export default (posts) => {
   <h1 class="logo-movil">PET LOVERS</h1>
 </header>
 <div class="list-menu-destok">
-<menu id="menu-movil-destok"><span id="nameUserHeader">Nombre de Mascota</span><i id="icon-down" class="fas fa-caret-down"></i></menu>
+<menu id="menu-movil-destok"><span id="nameUserHeader">Nombre de Mascota</span>
+<img id="icon-down" src="https://img.icons8.com/carbon-copy/100/000000/expand-arrow.png">
+</menu>
 <nav id="enlaces-destok" class="animationOne">
   <a href="#/catalogo" class="profile-destok text">Muro</a>
   <p class="text">Salir</p>

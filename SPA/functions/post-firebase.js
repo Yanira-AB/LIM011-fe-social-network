@@ -154,3 +154,9 @@ export const printLike = (doc) => {
   }
   return boolean;
 };
+
+// Crear en colecciones en Firestore - Kelly
+export const addInFirestore = (nameCollection, id, set) => {
+  const addCollection = firebase.firestore().collection(nameCollection).doc(id).set(set);
+  return addCollection;
+};
